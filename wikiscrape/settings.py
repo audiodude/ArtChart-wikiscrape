@@ -12,4 +12,6 @@ BOT_VERSION = '1.0'
 SPIDER_MODULES = ['wikiscrape.spiders']
 NEWSPIDER_MODULE = 'wikiscrape.spiders'
 USER_AGENT = '%s/%s' % (BOT_NAME, BOT_VERSION)
-
+ITEM_PIPELINES = [
+    'wikiscrape.pipelines.SaveToMySQL'
+]
