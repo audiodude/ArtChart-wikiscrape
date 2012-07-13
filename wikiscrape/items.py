@@ -9,3 +9,4 @@ class ArtInfo(Item):
     name = Field()
     artist = Field()
     location = Field()
+    url = Field()

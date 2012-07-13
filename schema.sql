@@ -18,6 +18,7 @@ CREATE TABLE `works` (
   `name` VARCHAR(255) NOT NULL,
   `artist_id` INT(10) UNSIGNED,
   `location_id` INT(10) UNSIGNED,
+  `url` VARCHAR(600),
   KEY `artist_id` (`artist_id`),
   KEY `location_id` (`location_id`),
   FOREIGN KEY (`artist_id`) REFERENCES `artists` (`id`),
