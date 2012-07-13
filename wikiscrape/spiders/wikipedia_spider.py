@@ -64,8 +64,7 @@ class WikipediaSpider(BaseSpider):
                 url = None
 
             page_text = page_text[0]
-            md_full = RE_INFOBOX_PAINTING.search(page_text)
-            if md_full:
+            for md_full in RE_INFOBOX_PAINTING.finditer(page_text):
                 infobox = md_full.groups()[0]
                 md = RE_IB_LOCATION.search(infobox)
                 if md:

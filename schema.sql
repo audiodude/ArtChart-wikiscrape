@@ -21,6 +21,7 @@ CREATE TABLE `works` (
   `url` VARCHAR(600),
   KEY `artist_id` (`artist_id`),
   KEY `location_id` (`location_id`),
+  KEY `name` (`name`),
   FOREIGN KEY (`artist_id`) REFERENCES `artists` (`id`),
   FOREIGN KEY (`location_id`) REFERENCES `locations` (`id`)
 ) CHARACTER SET=utf8;
