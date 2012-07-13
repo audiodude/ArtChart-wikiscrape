@@ -79,4 +79,6 @@ class WikipediaSpider(BaseSpider):
                         md_name = RE_IB_NAME.search(infobox)
                         if md_name:
                             name = clean_wiki_string(md_name.groups()[0])
-                            yield ArtInfo(name=name, artist=artist, location=location, url=url)
+
+                            if location and artist and name:
+                                yield ArtInfo(name=name, artist=artist, location=location, url=url)
