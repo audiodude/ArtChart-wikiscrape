@@ -2,7 +2,7 @@ import oursql
 
 class SaveToMySQL(object):
     def __init__(self):
-        self.conn = oursql.connect(host='localhost', user='root', db='artchart_2', port=3307)
+        self.conn = oursql.connect(host='localhost', user='root', db='artchart_dev', port=3307)
 
     def process_item(self, item, spider):
         cursor = self.conn.cursor()
