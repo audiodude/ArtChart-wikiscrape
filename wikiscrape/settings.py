@@ -6,7 +6,7 @@
 #     http://doc.scrapy.org/topics/settings.html
 #
 
-BOT_NAME = 'artchart.info_wikiscrape'
+BOT_NAME = 'artchart.info_scraper'
 BOT_VERSION = '1.0'
 
 SPIDER_MODULES = ['wikiscrape.spiders']
